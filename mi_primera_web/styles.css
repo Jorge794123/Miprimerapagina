@@ -22,11 +22,7 @@ header{
     right: 0;
 
 }
- .greeting{
-    color: blueviolet;
-    padding: 50px;
-    justify-content: center;
- }   
+ 
 
 header a i{
     color: aliceblue;
