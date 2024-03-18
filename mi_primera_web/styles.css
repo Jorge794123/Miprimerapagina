@@ -1,0 +1,169 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "basic-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+header{
+    display: flex;
+    background-color: rgb(75, 47, 47) ;
+    opacity: 95%;
+    color: rgb(222, 227, 233);
+    align-items: center;
+    height: 100px;
+    padding: 5px 30px 5px 30px;
+    justify-content: space-between;
+   
+    position: fixed;
+    left: 0;
+    right: 0;
+
+    
+}
+header a i{
+    color: aliceblue;
+    font-size: 3em;
+}
+header nav ul{
+    color: rgb(255, 255, 255);
+    justify-content:flex-end;
+    display: flex;
+    gap: 1em;
+    
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.seccion-1{
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    flex-wrap: wrap;
+    
+    
+}
+.acerca-imagen{
+    margin: 2%;
+
+}
+.acerca-de{
+    text-align: right;
+    width: 400px;
+    
+}
+
+.seccion-2{
+   display: flex;
+   justify-content: center;
+   max-width: 100%;
+   flex-wrap: wrap;
+}
+footer{
+    background-color: rgb(44, 21, 21);
+    padding: 10px;
+    margin-top: 3px;
+}
+footer h3 nav{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+
+}
+.Contactame{
+    color: bisque;
+}
+.seccion-3{
+    padding: 50px;
+    background-color: rgb(247, 247, 235);
+    
+}
+.Temas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+}
+.temas-container{
+    padding: 50px;
+    max-width: 450px;
+}
+
+.imagen_proyecto{
+    border-radius: 5%;
+}
+#contacto i{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    color:rgb(43, 207, 153)
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.seccion-3 a{
+    text-decoration: none;
+    color: rgb(155, 67, 8);
+}
+@media(max-width:768px){
+    header{
+        background-color: rgb(161, 110, 47);
+
+    }
+    .seccion- img{
+        height: 70%;
+    }
+    .acerca-de{
+        text-align: center;
+    }
+    .seccion-2{
+        height: 50%;
+    }
+    .checkbtn{
+        display: block;
+    }   
+    #encabezado ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(23, 23, 61);
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    #check:checked ~ul{
+        left: 0;
+        display: block;
+    }
+    #encabezado nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+    #encabezado nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ .checkbtn{
+        color: rgb(22, 22, 49);
+    }
+    
+}
