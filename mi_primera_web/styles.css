@@ -21,8 +21,13 @@ header{
     left: 0;
     right: 0;
 
-    
 }
+ .greeting{
+    color: blueviolet;
+    padding: 50px;
+    justify-content: center;
+ }   
+
 header a i{
     color: aliceblue;
     font-size: 3em;
